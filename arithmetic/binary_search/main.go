@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+// 二分查找
 func bin_search(arr []int, finddata int) int {
 	low := 0
 	hight := len(arr) - 1
