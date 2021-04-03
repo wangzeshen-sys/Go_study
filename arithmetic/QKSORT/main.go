@@ -1,7 +1,7 @@
 package main
 
 import "fmt"
-
+// 快速排序
 func QuickSort(arr []int) []int {
 	if len(arr) <= 1 {
 		return arr
