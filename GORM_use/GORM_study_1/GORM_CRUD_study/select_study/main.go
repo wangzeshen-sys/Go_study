@@ -170,8 +170,13 @@ func main() {
 	// SELECT * FROM `user_infos`  WHERE (name <> '小刚') AND (gender='女')
 	fmt.Println("u3", u3)
 
+	// Db.Debug().Set("gorm:query_option", "FOR UPDATE").First(&u1,2)
 	
-
+	// FirstOrInit
+	// 获取第一个匹配的记录，或者使用给定的条件初始化一个新的记录（仅适用于struct，map条件）
+	var u11 UserInfo
+	Db.FirstOrInit(&u11, UserInfo{Name: "小智"})
+	fmt.Println("u11", u11)
 
 
 
