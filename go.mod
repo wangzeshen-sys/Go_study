@@ -3,6 +3,7 @@ module xx
 go 1.15
 
 require (
+	// github.com/Shopify/sarama v1.28.0 // indirect
 	github.com/garyburd/redigo v1.6.2
 	github.com/go-sql-driver/mysql v1.6.0
 	github.com/jinzhu/gorm v1.9.16
